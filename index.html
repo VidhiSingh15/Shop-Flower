@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Flower Shop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="wishlist-icon" onclick="toggleWishlist()">🤍 Wishlist (<span id="wishlist-count">0</span>)</div>
+
+<div id="wishlist-popup" class="wishlist-popup hidden">
+  <h3>Your Wishlist</h3>
+  <ul id="wishlist-items"></ul>
+  <button onclick="closeWishlist()">Close</button>
+</div>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="images/hero-flower.png" alt="Flowers Banner" class="hero-img">
+    <div class="hero-text">
+      <h1>Welcome to our Flower Shop</h1>
+      <p>Fresh. Fragrant. Fantastic.</p>
+      <a href="#shop" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>About Us</h2>
+    <p>We deliver fresh flowers and happiness across the city. Choose from our wide range of roses, lilies, and exotic bouquets.</p>
+  </section>
+
+  <!-- Flower Categories -->
+  <section class="categories">
+    <h2>Our Categories</h2>
+    <div class="category-list">
+      <div class="category"><img src="images/category1.jpg"><p>Roses</p></div>
+      <div class="category"><img src="images/category2.jpg"><p>Exotic Bouquets</p></div>
+      <div class="category"><img src="images/gift.jpg"><p>Gift</p></div>
+      <div class="category"><img src="images/plant.jpg"><p> Plants</p></div>
+
+    </div>
+  </section>
+
+
+  <!-- Featured Products -->
+<section id="shop" class="products">
+  <h2>Best Sellers</h2>
+  <div class="product-list">
+    
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Pink Roses', 'images/flower1.jpg', '₹1999')">🤍</span>
+      <img src="images/flower1.jpg"><h3>Pink Roses</h3><p>₹1999</p><span class="wishlist-icon" onclick="toggleWishlist(this)">♡</span><a href="#" class="btn">Shop Now</a>
+    </div>
+    
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Lily Rose Bunch', 'images/flower2.jpg', '₹2999')">🤍</span>
+      <img src="images/flower2.jpg"><h3>Lily Rose Bunch</h3><p>₹2999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+    
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Rose Bouquet', 'images/flower3.jpg', '₹4999')">🤍</span>
+      <img src="images/flower3.jpg"><h3>Rose Bouquet</h3><p>₹4999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Lily Bouquet', 'images/flower4.jpg', '₹2999')">🤍</span>
+      <img src="images/flower4.jpg"><h3>Lily Bouquet</h3><p>₹2999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Pink Bouquet', 'images/flower5.jpg', '₹1999')">🤍</span>
+      <img src="images/flower5.jpg"><h3>Pink Bouquet</h3><p>₹1999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Sunflower Bouquet', 'images/flower6.jpg', '₹999')">🤍</span>
+      <img src="images/flower6.jpg"><h3>Sunflower Bouquet</h3><p>₹999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Lily Bouquet 2', 'images/flower7.jpg', '₹999')">🤍</span>
+      <img src="images/flower7.jpg"><h3>Lily Bouquet</h3><p>₹999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Rose Bunch', 'images/flower8.jpg', '₹999')">🤍</span>
+      <img src="images/flower8.jpg"><h3>Rose Bunch</h3><p>₹999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Rose Lily Bouquet', 'images/flower9.jpg', '₹999')">🤍</span>
+      <img src="images/flower9.jpg"><h3>Rose Lily Bouquet</h3><p>₹999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Blue Bouquet', 'images/flower10.jpg', '₹999')">🤍</span>
+      <img src="images/flower10.jpg"><h3>Blue Bouquet</h3><p>₹999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Blue White Bouquet', 'images/flower11.jpg', '₹999')">🤍</span>
+      <img src="images/flower11.jpg"><h3>Blue White Bouquet</h3><p>₹999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+    <div class="product">
+      <span class="wishlist-btn" onclick="addToWishlist(this, 'Rose Bouquet 2', 'images/flower12.jpg', '₹999')">🤍</span>
+      <img src="images/flower12.jpg"><h3>Rose Bouquet</h3><p>₹999</p><a href="#" class="btn">Shop Now</a>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- Testimonials -->
+  <section class="cus">
+    <h2>What Customers Say</h2>
+    <div class="testimonial">
+      <img src="images/cus.png" alt="Customer">
+      <blockquote>"Beautiful flowers and great delivery! Will order again."</blockquote>
+    </div>
+  </section>
+  
+<section class="about">
+  <h2>About Us</h2>
+  <div class="about-content">
+    <img src="images/delivery-icon.png" alt="Delivery Icon" >
+    <p>We deliver fresh flowers and happiness across the city. Choose from our wide range of roses, lilies, and exotic bouquets.</p>
+    <p>Welcome to <strong>Floral Bliss</strong> – where petals meet perfection! We are a boutique flower shop committed to spreading joy through the beauty of fresh blooms.</p>
+    <p>Whether you're celebrating love, friendship, or milestones, we offer carefully curated floral arrangements tailored for every occasion.</p>
+    <p>We source flowers daily to ensure freshness and elegance in every bouquet. Our florists craft each order with creativity and care.</p>
+    <p>With our fast and reliable delivery service, your thoughtful gesture is just a click away. From same-day deliveries to custom packaging, we’ve got you covered.</p>
+    <p>Visit us online or at our store and experience the magic of nature's most beautiful creations – because every flower tells a story.</p>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <!-- Contact Section -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: contact@ourflowers.com</p>
+    <p>Phone: xxxxxxxx</p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 OUR Flower Shop. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
